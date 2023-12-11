@@ -1,0 +1,88 @@
+.staff-container{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background: var(--background-color);
+    color: white;
+}
+.staff-container .order-item{
+    width: 90%;
+    height: max-content;
+    padding: 10px;
+    margin: 20px auto;
+    border: 2px solid;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    overflow: hidden;
+}
+.staff-container .order-item>img{
+    min-width:200px;
+    width: 20vw;
+    max-width: 30vw;
+    border-radius: 10px;
+    border: 2px solid;
+    max-height: 170px;
+}
+.staff-container .order-item>.details{
+    width: calc(100% - 250px);
+    height: 100%;
+}
+.staff-container .order-item>.details h3,
+.staff-container .order-item>.details :nth-child(3){
+    text-align: center;
+    padding: 10px 0;
+}
+.staff-container .order-item>.details :nth-child(2) {
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+.staff-container .order-item>.details :nth-child(4){
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+.staff-container .details :nth-child(4)>input[type="checkbox"]{
+height: 20px;
+width: 20px;
+outline: 1px solid;
+cursor: pointer;
+}
+.staffLogoutBtn{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: max-content;
+    width: max-content;
+    padding: 15px 20px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5px;
+    color: var(--color1);
+    background-color: var(--color2);
+    border: 1px solid;
+}
+
+@media screen and (max-width:700px) {
+    .staff-container .order-item{
+        height: max-content;
+        flex-direction: column;
+    }
+    .staff-container .order-item>.details{
+        width: 100%;
+    }
+}
+@media screen and (max-width:320px){
+    .staff-container .order-item>.details :nth-child(2){
+        flex-direction: column;
+    }
+}
+@media screen and (min-width:2000px){
+    .staff-container .order-item>.details{
+        font-size:x-large;
+    }
+}

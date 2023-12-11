@@ -1,0 +1,123 @@
+.order-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  background: var(--background-color);
+  overflow-y: scroll;
+}
+.order-container > div {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--white-color);
+  font-family: "Open Sans", sans-serif;
+}
+.order-container > .food-details > p:first-child {
+  width: 90%;
+  max-height: 25%;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.order-container > .food-details > img {
+  width: 70%;
+  max-height: 80%;
+  border-radius: 10px;
+  margin: 40px 0;
+  outline: 2px solid black;
+}
+.order-container > .food-details > .description {
+  width: 90%;
+  min-height: max-content;
+  max-height: 40%;
+  text-align: center;
+}
+.order-container .description > ul {
+  margin: 20px 0;
+}
+.order-container .description > ul li {
+  margin: 10px 0;
+}
+
+.order-container > .order-details > p:first-child {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: var(--color1);
+}
+.order-container > .order-details > input[type="number"] {
+  width: 40%;
+  height: 30px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid;
+  border-radius: 5px;
+  text-align: center;
+  margin: 30px 0;
+  background-color: transparent;
+  color: var(--white-color);
+}
+.order-container > .order-details > input[type="number"]::placeholder {
+  color: var(--white-color);
+  text-align: center;
+}
+.order-container > .order-details > :nth-child(4) {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.order-container > .order-details > button {
+  width: 120px;
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid var(--white-color);
+  color: var(--color1);
+  cursor: pointer;
+  margin-top: 50px;
+  background: transparent;
+}
+.order-container > .order-details > button:hover {
+  background-color: var(--color1);
+  color: var(--white-color);
+}
+.order-container > .back-btn {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  height: 40px;
+  width: 100px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  color: var(--white-color);
+}
+.order-container > .back-btn:hover {
+  background-color: var(--white-color);
+  color: black;
+}
+
+@media screen and (max-width: 450px) {
+  .order-container {
+    flex-direction: column;
+  }
+  .order-container > div {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .order-container > .order-details > button {
+    width: 100px;
+  }
+  .order-container > .order-details > p:first-child{
+    font-size: 1.5rem;
+  }
+}

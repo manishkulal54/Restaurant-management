@@ -1,0 +1,117 @@
+.signup-container{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: var(--background-color);
+    font-family: 'Open Sans', sans-serif;
+
+}
+.signup-container >.subContainer{
+    width: 50vw;
+    height: 70%;
+    min-height: 500px;
+    border: 2px solid;
+    border-radius: 20px;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+    color: var(--white-color);
+}
+.signup-container >.subContainer h1{
+    color: var(--color1);
+}
+#userType{
+    width: 50%;
+    height: 30px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid;
+    cursor: pointer;
+    text-align: center;
+    color: var(--white-color);
+    background-color: tr;
+}
+#userType option{
+    background-color: rgb(43, 44, 45);
+}
+.signup-container >.subContainer input{
+    width: 50%;
+    height: 30px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid;
+    text-align: center;
+    color: var(--white-color);
+}
+.signup-container >.subContainer>div{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.signup-container >.subContainer>div input{
+    margin: 20px 0;
+    color: var(--white-color);
+}
+.signup-container >.subContainer>button{
+    width: 6vw;
+    min-width: max-content;
+    padding: 10px 30px;
+    height: 6vh;
+    border-radius: 5px;
+    border: 1px solid;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--color1);
+}
+.signup-container >.subContainer>button:hover{
+    background-color: var(--color1);
+    color: white;
+}
+.signup-container >.subContainer> a{
+    color: rgb(130, 129, 129);
+    text-decoration: underline;
+}
+
+@media screen and (max-width:1000px) {
+    .signup-container >.subContainer input{
+        width: 70%;
+    }
+    #userType{
+        width: 70%;
+    }
+}
+@media screen and (max-width:800px) {
+    .signup-container >.subContainer{
+        width: 70vw;
+    }
+    .signup-container >.subContainer input{
+        width: 60%;
+    }
+    #userType{
+        width: 60%;
+    }
+}
+@media screen and (max-width:600px) {
+    .signup-container >.subContainer{
+        width: 80vw;
+    }
+    .signup-container >.subContainer input{
+        width: 80%;
+    }
+    #userType{
+        width: 80%;
+    }
+}

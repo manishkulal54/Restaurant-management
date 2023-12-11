@@ -1,0 +1,135 @@
+nav{
+    width: 100%;
+    height: var(--navbar-height);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav >.logo-container{
+    width: max-content;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+    margin-left: 50px;
+    align-items: center;
+    cursor: pointer;
+}
+.logo-container >img{
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    margin: 0 20px;
+    cursor: pointer;
+}
+.logo-container h2{
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 5px;
+    color: white;
+}
+nav>div{
+    width: max-content;
+    height: 100%;
+    display: flex;
+    align-items: center ;
+}
+nav input[type="search"]{
+    width: 20vw;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid white;
+    color: var(--color1);
+    margin: 0 10px;
+    text-align: center;
+    background-color: transparent;
+}
+nav input[type="search"]::placeholder{
+    text-align: center;
+    color: var(--color1);
+}
+nav >div button{
+    height: 40px;
+    width: max-content;
+    padding: 0 15px;
+    border-radius:10px;
+    border: 1px solid solid; 
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    letter-spacing: 0.7px;
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--color1);
+}
+nav >div button:hover{
+    color: var(--hover-color);
+}
+nav > button>svg{
+    margin-left: 10px;
+}
+
+
+
+nav .hamContainer{
+    height: 100%;
+    width: 80px;
+    display: none;
+    align-items: center;
+    justify-content: center
+}
+nav  .hamburger{
+    height: max-content;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+nav  .hamburger span{
+    width: 35px;
+    height: 2px;
+    border: 2px solid white;
+    margin: 2px 0;
+}
+
+
+
+@media screen and (max-width:650px) {
+    nav{
+        height: max-content;
+        position: relative;
+    }
+    nav .hamContainer{
+        display: flex;
+    }
+    nav .navButtons{
+        display:none;
+    }
+    nav .logo-container{
+        margin: 20px;
+    }
+    .hamNavButtons{
+        height: 250px;
+        width: 100%;
+        position: absolute;
+        right:0 ;
+        top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .hamNavButtons > button{
+        margin: 20px 0;
+    }
+    .hamburger >.span1{
+        transform:translate(0,8px) rotate(45deg);
+    }
+    .hamburger >.span2{
+        display: none;
+    }
+    .hamburger >.span3{
+        transform:translate(0px,0px) rotate(-45deg);
+    }
+}

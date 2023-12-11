@@ -1,0 +1,21 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+:root{
+  --color1:#ffbe33;
+  --hover-color:#c18d1e;
+  --color2:#222831;
+  --white-color:#ffffff;
+  --background-color:#222831;
+  --navbar-height:80px;
+  --dark-blue:rgb(16, 19, 60)
+}
+iframe#webpack-dev-server-client-overlay{display:none!important}
