@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom'
 export default function Signup() {
   const navigate = useNavigate()
   // const url = "http://localhost:3001"
-  const url = "https://proud-tick-life-jacket.cyclic.cloud"
+  const url = "https://zany-red-katydid-veil.cyclic.app"
 
   const [userType, setUserType] = useState("user");
   const [errorMessage, setErrorMessage] = useState("")

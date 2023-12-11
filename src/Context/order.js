@@ -10,7 +10,7 @@ export default function OrderState(props) {
     const [earning, setEarcning] = useState(0)
     const [foodOrder,setFoodOrder]=useState({})
     // const url = "http://localhost:3001"
-    const url = "https://proud-tick-life-jacket.cyclic.cloud"
+    const url = "https://zany-red-katydid-veil.cyclic.app"
 
     async function createOrder(authToken, foodName,price,tableNo, quantity,image) {
         const response = await fetch(`${url}/api/order/create`, {

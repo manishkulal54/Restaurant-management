@@ -12,7 +12,7 @@ export default function UserState(props) {
     const [managerCount, setManagerCount] = useState(0)
 
     // const url = "http://localhost:3001"
-    const url = "https://proud-tick-life-jacket.cyclic.cloud"
+    const url = "https://zany-red-katydid-veil.cyclic.app"
 
     async function createStaff(data) {
         axios({

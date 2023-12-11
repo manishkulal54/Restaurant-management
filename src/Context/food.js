@@ -14,7 +14,7 @@ export default function FoodState(props) {
     })
     const [singleFood,setSingleFood]=useState([])
     // const url = "http://localhost:3001"
-    const url = "https://proud-tick-life-jacket.cyclic.cloud"
+    const url = "https://zany-red-katydid-veil.cyclic.app"
 
     
         const addFood = async (data,adminToken) => {

@@ -15,7 +15,7 @@ import FoodOrderDetails from "../components/FoodOrderDetails";
 export default function Admin() {
   let { page } = useParams();
   // const url = "http://localhost:3001"
-  const url = "https://proud-tick-life-jacket.cyclic.cloud"
+  const url = "https://zany-red-katydid-veil.cyclic.app"
   const [componenet, setComponent] = useState(<Dashboard />);
   const [adminData, setAdminData] = useState({
     username: "",

@@ -6,7 +6,7 @@ import "../stylesheet/Signup.css";
 export default function Signin() {
   const navigate=useNavigate()
   // const url = "http://localhost:3001"
-    const url = "https://proud-tick-life-jacket.cyclic.cloud"
+    const url = "https://zany-red-katydid-veil.cyclic.app"
 
   const [userType, setUserType] = useState('');
   const [errorMessage,setErrorMessage]=useState("")

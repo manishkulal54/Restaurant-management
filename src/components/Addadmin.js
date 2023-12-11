@@ -4,7 +4,7 @@ export default function Addadmin() {
   const [adminsList,setAdminList]=useState([])
   const [admin,setAdmin]=useState({name:"",password:""})
   // const url="http://localhost:3001"
-  const url = "https://proud-tick-life-jacket.cyclic.cloud"
+  const url = "https://zany-red-katydid-veil.cyclic.app"
 
 
 
